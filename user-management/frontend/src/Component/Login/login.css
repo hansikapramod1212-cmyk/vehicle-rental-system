@@ -1,0 +1,110 @@
+ /* Page background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #e5e7eb;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centered login container */
+.login-container {
+
+  background: #1f1f1f;
+  padding: 50px 45px;          /* more padding */
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  width: 420px;               /* ⬅️ bigger width */
+  max-width: 92%;
+  animation: fadeIn 0.8s ease-in-out;
+
+
+   
+}
+
+/* Heading */
+.login-container h1 {
+   text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;             /* bigger font */
+  color: #10b981;
+  letter-spacing: 1px;
+}
+
+/* Input fields */
+.login-container input {
+   
+   display: block;
+  width: 100%;              /* always match container width */
+  max-width: 100%;          /* never overflow */
+  box-sizing: border-box;   /* include padding inside width */
+  
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 1px solid #444;
+  border-radius: 8px;
+  outline: none;
+  background: #2d2d2d;
+  color: #f9fafb;
+  font-size: 24px;
+}
+
+   
+
+
+.login-container input:focus {
+  background: #374151;
+  border: 2px solid #10b981;
+}
+
+/* Labels */
+.login-container label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #d1d5db;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 14px;               /* bigger button */
+  background: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;             /* bigger font */
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.login-container button:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+.login-container button:disabled {
+  background: #6b7280;
+  cursor: not-allowed;
+}
+
+/* Subtle animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

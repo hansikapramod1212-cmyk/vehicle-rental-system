@@ -1,0 +1,55 @@
+ /* Sidebar container */
+ /* === hamburger button === */
+.menu-btn{
+  position: fixed;
+  top: 14px; left: 14px;
+  z-index: 1300;
+  background: #171a1d;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+/* === backdrop behind the drawer === */
+.backdrop{
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.45);
+  opacity: 0; pointer-events: none;
+  transition: opacity .25s;
+  z-index: 1200;
+}
+.backdrop.show{ opacity: 1; pointer-events: auto; }
+
+/* === sliding container that wraps your existing UL === */
+.nav-drawer{
+  position: fixed; top: 0; left: 0; height: 100vh;
+  width: 260px; z-index: 1250;
+  transform: translateX(-100%);           /* hidden by default */
+  transition: transform .3s ease-in-out;
+}
+.nav-drawer.open{ transform: translateX(0); }
+
+/* === your existing UL, now styled as a vertical panel === */
+.home-ul{
+  list-style: none; margin: 0; padding: 20px 12px;
+  height: 100%; width: 100%;
+  background: #171a1d;                     /* panel color */
+  display: flex; flex-direction: column; gap: 14px;
+  box-shadow: 4px 0 12px rgba(0,0,0,.25);
+}
+.home-li h1{ font-size: 18px; margin: 0; color: #e8eef2; }
+.home-a{ color: #e8eef2; text-decoration: none; font-weight: 600; }
+.home-a:hover{ color: #4caf50; }
+
+/* buttons */
+.btn{ display:inline-block; padding:8px 12px; border-radius:6px; font-weight:700; text-decoration:none; }
+.btn-register{ background:#4caf50; color:#fff; }
+.btn-login{ background:#2196f3; color:#fff; }
+
+/* optional hover slide */
+.home-li{ transition: transform .15s; }
+.home-li:hover{ transform: translateX(3px); }

@@ -1,0 +1,74 @@
+/* Container for all user blocks */
+.users-container {
+   display: flex;           /* row layout */
+  flex-direction: row;     /* horizontal */
+  gap: 16px;               /* space between cards */
+  padding: 20px;
+  overflow-x: auto;        /* scroll sideways if too many cards */
+  white-space: nowrap;     /* keep them on one line */
+}
+
+/* Each user card */
+.users-container > div {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.users-container > div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Headings inside user card */
+.users-container h1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 6px 0;
+  color: #333;
+}
+
+/* First heading “Add User Display” smaller + muted */
+.users-container h1:first-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Update + Delete buttons */
+.users-container a,
+.users-container button {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Update button (link) */
+.users-container a {
+  background: #4caf50;
+  color: white;
+}
+
+.users-container a:hover {
+  background: #43a047;
+}
+
+/* Delete button */
+.users-container button {
+  background: #f44336;
+  color: white;
+  border: none;
+}
+
+.users-container button:hover {
+  background: #d32f2f;
+}

@@ -1,0 +1,81 @@
+:root{
+  --panel:#171a1d;
+  --soft:#22262a;
+  --ring:rgba(255,255,255,0.12);
+  --text:#e8eef2;
+  --muted:#a7b0b7;
+  --brand:#4caf50;
+}
+
+/* Page container */
+body { background: #0e1113; }
+form { max-width: 640px; }
+
+/* Wrap the page nicely without changing markup */
+h1 {
+  margin: 18px auto 12px;
+  max-width: 640px;
+  color: var(--text);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+form {
+  margin: 0 auto 28px;
+  padding: 18px;
+  background: var(--panel);
+  border: 1px solid var(--ring);
+  border-radius: 14px;
+  color: var(--text);
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  display: grid;
+  gap: 14px;
+}
+
+/* Label + inputs */
+label {
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 100%;
+  background: var(--soft);
+  color: var(--text);
+  border: 1px solid var(--ring);
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+  transition: border .15s, box-shadow .15s;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 3px rgba(76,175,80,0.25);
+  border-color: rgba(76,175,80,.6);
+}
+
+/* Button */
+button[type="submit"], button {
+  width: fit-content;
+  background: var(--brand);
+  color: #06220e;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .15s, filter .15s;
+}
+
+button:hover { transform: translateY(-1px); }
+button:disabled { opacity: .7; cursor: not-allowed; }
+
+/* Remove the default <br>s vertical jumps */
+br { display: none; }
