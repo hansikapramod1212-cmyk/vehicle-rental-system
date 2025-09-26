@@ -1,12 +1,13 @@
 /* Container for all user blocks */
-.users-container {
-   display: flex;           /* row layout */
-  flex-direction: row;     /* horizontal */
-  gap: 16px;               /* space between cards */
-  padding: 20px;
-  overflow-x: auto;        /* scroll sideways if too many cards */
-  white-space: nowrap;     /* keep them on one line */
+ .users-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 per row */
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;   /* optional: keeps layout neat */
+  margin: 0 auto; 
 }
+
 
 /* Each user card */
 .users-container > div {
@@ -71,4 +72,16 @@
 
 .users-container button:hover {
   background: #d32f2f;
+}
+@media (max-width: 1200px) {
+  .users-container { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 992px) {
+  .users-container { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .users-container { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .users-container { grid-template-columns: 1fr; }
 }
