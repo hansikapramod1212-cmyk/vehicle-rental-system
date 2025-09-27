@@ -1,0 +1,20 @@
+.home-content{
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+
+  /* make text visible */
+  color:#e8eef2;          /* light */
+  position: relative;
+  z-index: 1;             /* above anything low z-index */
+}
+
+.home-content h1{
+  margin: 0 0 8px;
+  color:#10b981;          /* brand green */
+  font-weight: 800;
+  font-size: 28px;
+}

@@ -1,14 +1,16 @@
-import React from 'react'
+ import React from 'react';
 import Nav from "../Nav/Nav";
+import "./Home.css";
 
 function Home() {
+    
   return (
-    <div>
-        
-      <h1>Home page signin</h1>
+    <div className="home-content">
+      <h1>Welcome to Auto Rent Pro</h1>
+      <p>Manage users, view vehicles, and explore reservations 🚘</p>
     </div>
-  )
+  );
 }
 
-export default Home
 
+export default Home;
