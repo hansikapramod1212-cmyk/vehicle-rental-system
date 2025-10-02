@@ -1,0 +1,183 @@
+/* Container for the whole booking page */
+.booking-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: 90vh;
+  box-sizing: border-box;
+}
+
+/* Left side: Vehicle cards */
+.vehicle-list {
+  width: 30%;
+  max-height: 100%;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.vehicle-list h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.vehicle-card {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.vehicle-card:hover {
+  background-color: #e0f7fa;
+}
+
+.vehicle-card.selected {
+  border-color: #00796b;
+  background-color: #b2dfdb;
+}
+
+/* Right side: Booking form */
+.booking-form {
+  width: 70%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.booking-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 6px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+.booking-form button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #00796b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.booking-form button:hover {
+  background-color: #004d40;
+}
+
+/* Submitted bookings */
+.submitted-bookings {
+  margin-top: 20px;
+}
+
+.submitted-bookings h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Scrollable table container */
+.table-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #00796b;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Action buttons */
+button.update-btn {
+  background-color: #0288d1;
+  margin-right: 4px;
+}
+
+button.delete-btn {
+  background-color: #d32f2f;
+  margin-right: 4px;
+}
+
+button.print-btn {
+  background-color: #ffa000;
+}
+
+button.update-btn,
+button.delete-btn,
+button.print-btn {
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: 0.2s;
+}
+
+button.update-btn:hover {
+  background-color: #0277bd;
+}
+
+button.delete-btn:hover {
+  background-color: #c62828;
+}
+
+button.print-btn:hover {
+  background-color: #ff8f00;
+}
+
+/* Make form scrollable if content overflows */
+.booking-form {
+  overflow-y: auto;
+}

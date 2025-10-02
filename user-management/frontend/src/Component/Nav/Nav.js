@@ -1,6 +1,4 @@
- 
-
- import React, { useState } from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import { Link } from "react-router-dom";
 
@@ -18,7 +16,7 @@ function Nav() {
         onClick={() => setOpen(false)}
       />
 
-      {/* keep your existing UL; we only wrapped it in .nav-drawer */}
+      {/* nav drawer */}
       <div className={`nav-drawer ${open ? "open" : ""}`}>
         <ul className="home-ul">
           <li className="home-li">
@@ -36,6 +34,14 @@ function Nav() {
               <h1>Display User Details</h1>
             </Link>
           </li>
+
+          {/* New Booking Management Button */}
+          <li className="home-li">
+            <Link to="/bookingmanagement" className="home-a" onClick={() => setOpen(false)}>
+              <h1>Booking Management</h1>
+            </Link>
+          </li>
+
           <li className="home-li">
             <Link to="/regi" className="btn btn-register" onClick={() => setOpen(false)}>
               Register

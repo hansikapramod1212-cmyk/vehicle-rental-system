@@ -11,9 +11,8 @@
 import UpdateUser from "./Component/UpdateUser/UpdateUser";
 import Register from "./Component/Register/Register";
 import Login from "./Component/Login/Login";
-  
- 
 
+import Bookingmanagement from "./Component/Bookingmangement/Bookingmanagement";
 
  function App() {
   return (
@@ -35,6 +34,10 @@ import Login from "./Component/Login/Login";
                <Route path="/regi" element={<Register/>}/>
                <Route path="/log" element={<Login/>}/>
                <Route path="/userdetails/:id" element={<UpdateUser/>}/>
+
+               <Route path="/bookingmanagement" element={<Bookingmanagement/>}/>
+               
+
           </Routes>
           {/* Other modules for your friends */}
           
