@@ -11,6 +11,10 @@
 import UpdateUser from "./Component/UpdateUser/UpdateUser";
 import Register from "./Component/Register/Register";
 import Login from "./Component/Login/Login";
+import Vehiclebook from "./Component/Vehiclebook/Vehiclebook";
+import Sedanrent from "./Component/Sedanrent/Sedanrent";
+import Lorry from "./Component/Lorry/Lorry";
+import Bike from "./Component/Bike/Bike";
   
  
 
@@ -35,6 +39,11 @@ import Login from "./Component/Login/Login";
                <Route path="/regi" element={<Register/>}/>
                <Route path="/log" element={<Login/>}/>
                <Route path="/userdetails/:id" element={<UpdateUser/>}/>
+               <Route path="/vehiclebook" element={<Vehiclebook/>}/>
+               <Route path="/sedanrent" element={<Sedanrent/>}/>
+               <Route path="/lorry" element={<Lorry/>}/>
+               <Route path="/bike" element={<Bike/>}/>
+
           </Routes>
           {/* Other modules for your friends */}
           

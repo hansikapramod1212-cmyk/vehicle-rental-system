@@ -1,0 +1,150 @@
+/* Container for the sedan rental page */
+.sedan-page-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Page title */
+.sedan-page-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Form styling */
+.sedan-form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.sedan-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+.sedan-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input and select fields */
+.sedan-form input,
+.sedan-form select {
+  margin-top: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.sedan-form button {
+  width: 200px;
+  align-self: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sedan-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Table container */
+.sedan-table-container {
+  margin-top: 30px;
+  padding: 15px;
+  border: 3px solid #007bff;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  overflow-x: auto;
+}
+
+/* Table styling */
+.sedan-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+}
+
+.sedan-table-container th,
+.sedan-table-container td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold; /* Darker text */
+  color: #222;
+}
+
+.sedan-table-container th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.sedan-table-container td {
+  background-color: #f9f9f9;
+}
+
+/* Table buttons */
+.sedan-table-container button {
+  margin: 2px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sedan-table-container button:hover {
+  opacity: 0.85;
+}
+
+.sedan-table-container button:nth-child(1) {
+  background-color: #ffc107; /* Edit */
+  color: #2d2a2a;
+}
+
+.sedan-table-container button:nth-child(2) {
+  background-color: #dc3545; /* Delete */
+  color: #fff;
+}
+
+.sedan-table-container button:nth-child(3) {
+  background-color: #28a745; /* Print */
+  color: #fff;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .sedan-form input,
+  .sedan-form select,
+  .sedan-form button {
+    width: 100%;
+  }
+
+  .sedan-table-container table,
+  .sedan-table-container th,
+  .sedan-table-container td {
+    font-size: 14px;
+  }
+}
